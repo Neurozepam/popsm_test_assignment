@@ -1,0 +1,11 @@
+doc_id,source,field,viz_and_mrz,label,viz_char_min,mrz_char_min
+tr_00369,web,First_name_ru,ФАРИДА,ФАРИЛА,0.9976,0.9914
+tr_00747,web,Last_name_ru,БАЛТРУШЕЕВИЧ,ЬАЛТРУШЕЕВИЧ,0.9959,0.9816
+tr_01185,mobile,Last_name_ru,МУЗЫЧУК,МУЗЫУУК,0.9993,0.9931
+tr_01371,web,Last_name_ru,ЛЯМПЕРЧИК,ЛЯНПЕРЧИК,0.9985,0.9553
+tr_01506,mobile_v2,First_name_ru,КАБЛЯХБАР,КАБЛЯЖБАР,1.0,1.0
+tr_01651,web,Last_name_ru,ЗИЯНУРОВ,ЗИЯНУРСВ,0.9994,0.9945
+tr_01765,mobile,First_name_ru,ХАСАНЗЯН,ХАОАНЗЯН,0.9989,0.9943
+tr_02183,web,Last_name_ru,КИТУРКО,КИТУРКС,0.9982,0.9935
+tr_02195,web,Last_name_ru,ТИШЕНСКИХ,ТИЩЕНСКИХ,0.9965,0.9476
+tr_02818,web,First_name_ru,ЕВГЕНИЙ,ЕВТЕНИЙ,0.9984,0.9941

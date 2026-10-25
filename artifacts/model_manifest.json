@@ -1,0 +1,158 @@
+{
+  "as_of": "2026-10-01",
+  "seed": 42,
+  "strict_partition_seeds": [
+    142,
+    143,
+    144
+  ],
+  "training_documents": 3000,
+  "unique_passports": 2994,
+  "economic_train_documents": 1798,
+  "economic_calibration_documents": 603,
+  "versions": {
+    "python": "3.11.16",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "input_sha256": {
+    "data/train_predictions.jsonl": "7c23de7e8be44a762aef387e57232dde701d12eddad54d4f252c844d848caaa3",
+    "data/train_labels.jsonl": "7e58735b5a3a100af624ce004ad1ea2576e730fabd0e85c78d0dcd7d481be907",
+    "data/test_predictions.jsonl": "b77b1fc7e813656e1b42ebc02a17db3af14bf881b2a3707972f16c99e6fcf3f4",
+    "reference/subdivisions.csv": "fa7999fab074d824ab89d26cef2ff4576f3cdf1b527eb38df3bc96322709eec4"
+  },
+  "economic_selected": [
+    {
+      "ratio": 5,
+      "policy": "field_hist_leaves15_l2_2:minimum",
+      "kind": "field",
+      "aggregation": "minimum",
+      "threshold": 0.8594906412989043,
+      "cal_TP": 362,
+      "cal_FP": 7,
+      "cal_FN": 27,
+      "cal_cost": 62,
+      "selection_key": [
+        62,
+        7,
+        27
+      ]
+    },
+    {
+      "ratio": 10,
+      "policy": "field_forest_depth10_leaf10:product",
+      "kind": "field",
+      "aggregation": "product",
+      "threshold": 0.8697444325336495,
+      "cal_TP": 353,
+      "cal_FP": 6,
+      "cal_FN": 36,
+      "cal_cost": 96,
+      "selection_key": [
+        96,
+        6,
+        36
+      ]
+    },
+    {
+      "ratio": 25,
+      "policy": "field_hist_leaves7_l2_5:minimum",
+      "kind": "field",
+      "aggregation": "minimum",
+      "threshold": 0.9571052907718316,
+      "cal_TP": 341,
+      "cal_FP": 5,
+      "cal_FN": 48,
+      "cal_cost": 173,
+      "selection_key": [
+        173,
+        5,
+        48
+      ]
+    }
+  ],
+  "strict_calibration": [
+    {
+      "partition_seed": 142,
+      "fold": 1,
+      "train_documents": 2001,
+      "cal_documents": 999,
+      "threshold": 0.9884085626339123,
+      "cal_accepted": 227
+    },
+    {
+      "partition_seed": 142,
+      "fold": 2,
+      "train_documents": 1999,
+      "cal_documents": 1001,
+      "threshold": 0.9927957864272097,
+      "cal_accepted": 31
+    },
+    {
+      "partition_seed": 142,
+      "fold": 3,
+      "train_documents": 2000,
+      "cal_documents": 1000,
+      "threshold": 0.9915274404772875,
+      "cal_accepted": 82
+    },
+    {
+      "partition_seed": 143,
+      "fold": 1,
+      "train_documents": 2001,
+      "cal_documents": 999,
+      "threshold": 0.9913020092807128,
+      "cal_accepted": 133
+    },
+    {
+      "partition_seed": 143,
+      "fold": 2,
+      "train_documents": 2000,
+      "cal_documents": 1000,
+      "threshold": 0.9926737483386836,
+      "cal_accepted": 87
+    },
+    {
+      "partition_seed": 143,
+      "fold": 3,
+      "train_documents": 1999,
+      "cal_documents": 1001,
+      "threshold": 0.9886089248736661,
+      "cal_accepted": 184
+    },
+    {
+      "partition_seed": 144,
+      "fold": 1,
+      "train_documents": 2000,
+      "cal_documents": 1000,
+      "threshold": 0.9909083366132786,
+      "cal_accepted": 84
+    },
+    {
+      "partition_seed": 144,
+      "fold": 2,
+      "train_documents": 2000,
+      "cal_documents": 1000,
+      "threshold": 0.9921671099760357,
+      "cal_accepted": 154
+    },
+    {
+      "partition_seed": 144,
+      "fold": 3,
+      "train_documents": 2000,
+      "cal_documents": 1000,
+      "threshold": 0.9900194988780908,
+      "cal_accepted": 194
+    }
+  ],
+  "caveat": "Internal grouped CV on the supplied train; no independent labeled test is available.",
+  "model_sha256": "955700fcae05f1a367c6c914827378c5ff2771e6a0b4f195d37a3c72fff68d9c",
+  "release_source_sha256": {
+    "passport_ocr.py": "e6e0ba6f3a4a2cbbcf787531c5c66637d3cb89dd6a41b1a5b19cb1b7b183c2c9",
+    "postprocess.py": "c996872d53f86a4265c47c24abafbff5310fe4603eee48cc7bcf78cb525a632a",
+    "train.py": "b930728f4bed4440f01a5fc8a556f020284b9e5071efcf37d7096c43bdbf3be9",
+    "analyze.py": "88917c0a798ece4215af9d9aa6263ba08bea222980a4d4703ebb952bac8c35c2"
+  }
+}

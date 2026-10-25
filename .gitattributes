@@ -1,0 +1,12 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.ipynb -text
+*.json -text
+*.jsonl -text
+*.csv -text
+*.joblib binary
+*.pdf binary
+evaluate.py -text
+TASK.md -text
+reference/SOURCE.txt -text

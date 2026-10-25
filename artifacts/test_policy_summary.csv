@@ -1,0 +1,5 @@
+policy,documents,accepted
+strict,2000,22
+cost5,2000,1197
+cost10,2000,1163
+cost25,2000,1103

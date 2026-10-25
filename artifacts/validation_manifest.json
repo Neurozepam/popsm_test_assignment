@@ -1,0 +1,25 @@
+{
+  "input_sha256": {
+    "data/train_predictions.jsonl": "7c23de7e8be44a762aef387e57232dde701d12eddad54d4f252c844d848caaa3",
+    "data/train_labels.jsonl": "7e58735b5a3a100af624ce004ad1ea2576e730fabd0e85c78d0dcd7d481be907",
+    "data/test_predictions.jsonl": "b77b1fc7e813656e1b42ebc02a17db3af14bf881b2a3707972f16c99e6fcf3f4",
+    "reference/subdivisions.csv": "fa7999fab074d824ab89d26cef2ff4576f3cdf1b527eb38df3bc96322709eec4"
+  },
+  "seed": 42,
+  "strict_outer_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "strict_partition_seeds": [
+    142,
+    143,
+    144
+  ],
+  "economic_cost_ratios": [
+    5,
+    10,
+    25
+  ],
+  "scikit_learn": "1.9.1"
+}
