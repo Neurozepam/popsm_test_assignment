@@ -7,3 +7,5 @@ __pycache__/
 .test-*/
 *.tmp
 work/
+release_manifest.json
+*.zip
